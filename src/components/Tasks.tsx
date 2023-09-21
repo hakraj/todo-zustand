@@ -14,7 +14,7 @@ const Tasks = () => {
     <>
       {tasks.map((task, i) => {
         return (
-          <form key={i}>
+          <form key={task?.id}>
             <div className="item">
               <div className='flex'>
                 <input
