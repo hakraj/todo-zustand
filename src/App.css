@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.center {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  width: 320px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 1rem;
 }
+
+.title {
+  color: #2192FF;
+  padding: 4px;
+}
+
+.box {
+  margin-bottom: 4rem;
+  padding: 1rem 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #2192FF;
+}
+
+.delete-icon {
+  background: transparent;
+  border: 0;
+}
+
+.svg {
+  height: 16px;
+  width: 16px;
+  color: red;
+  cursor: pointer;
+}
+
+.submit {
+  margin-top: 1rem;
+}
+
+button[type="submit"] {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 0;
+  background-color: #2192FF;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #2194ffa7;
+}
+
+
+input[type="text"] {
+  font-family: inherit;
+  text-align: center;
+  height: 56px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 224px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #2192FF;
+}
+
+::placeholder {
+  color: grey;
+}
+

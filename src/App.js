@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import AddTaskForm from './components/AddTaskForm.tsx';
+import Tasks from './components/Tasks.tsx';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="center">
+      <div className='container'>
+        <div className="heading">
+          <h1 className='title'>To-do list</h1>
+        </div>
+        <div className="box">
+          <Tasks />
+          <AddTaskForm />
+        </div>
+        <footer>
+          &copy; hak_raj 2023
+        </footer>
+      </div>
+    </main>
   );
-}
+};
 
 export default App;
